@@ -81,6 +81,19 @@ module.exports = {
     etag: false
   },
 
+  views: {
+    /*
+    |--------------------------------------------------------------------------
+    | Cache Views
+    |--------------------------------------------------------------------------
+    |
+    | Define whether or not to cache the compiled view. Set it to true in
+    | production to optimize view loading time.
+    |
+    */
+    cache: Env.get('CACHE_VIEWS', true)
+  },
+
   static: {
     /*
     |--------------------------------------------------------------------------

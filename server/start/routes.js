@@ -15,6 +15,7 @@
 
 const Route = use('Route')
 
-Route.get('/', ({ request }) => {
-  return { greeting: 'Hello world in JSON' }
-})
+//Route.on('/').render('pages.index')
+Route.get('/', 'PagesController.index')
+
+Route.resource('/posts', 'PostController')
